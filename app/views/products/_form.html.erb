@@ -11,33 +11,34 @@
     </div>
   <% end %>
 
+  
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <input class="input is-large" type="text" placeholder="Producto">
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :reference, style: "display: block" %>
     <%= form.text_field :reference %>
+    <%= form.text_field :name, class: "form-control", placeholder: 'Código' %>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
+    <input class="input is-large" type="text" placeholder="Descripción">
     <%= form.text_area :description %>
   </div>
 
   <div>
-    <%= form.label :quantity, style: "display: block" %>
+    <input class="input is-large" type="text" placeholder="Cantidad">
     <%= form.number_field :quantity %>
   </div>
 
   <div>
-    <%= form.label :price, style: "display: block" %>
+    <input class="input is-large" type="text" placeholder="Precio">
     <%= form.text_field :price %>
   </div>
 
   <div>
-    <%= form.label :img_url, style: "display: block" %>
+  <input class="input is-large" type="text" placeholder="Url de la imagen">
     <%= form.text_field :img_url %>
   </div>
 

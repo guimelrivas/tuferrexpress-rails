@@ -2,7 +2,7 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="../">
-                            <img src="../images/bulma.png" alt="Logo">
+                            <img src="../images/bulma.png" alt="Tuferrexpress">
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
@@ -14,14 +14,18 @@
                         <div class="navbar-end">
                             <div class="tabs is-right">
                                 <ul>
-                                    <li class="is-active"><a>Home</a></li>
-                                    <li><a href="">Examples</a></li>
-                                    <li><a href="">Features</a></li>
-                                    <li><a href="">Team</a></li>
-                                    <li><a href="">Help</a></li>
+                                    
+                                    <li><a href=""><%= link_to 'Inicio', root_path %></li>
+                                    <li><a href=""><%= link_to "Nosotros", about_path %></a></li>
+                                    <li><a href=""><%= link_to "Productos", products_url %></a></li>
+                                    <li><a href=""><%= link_to "Nuevos productos", new_product_path %></a></li>
+                                   
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
+
+            
+
