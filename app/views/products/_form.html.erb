@@ -12,38 +12,34 @@
   <% end %>
 
   
-  <div>
-    <input class="input is-large" type="text" placeholder="Producto">
-    <%= form.text_field :name %>
-  </div>
+  <div class="control">
+    <div>
+      <%= form.text_field :name, class: "input", placeholder:'Nombre' %><br><br>
+    </div>
 
-  <div>
-    <%= form.text_field :reference %>
-    <%= form.text_field :name, class: "form-control", placeholder: 'Código' %>
-  </div>
+    <div>
+      <%= form.text_field :reference, class: "input", placeholder:'Código' %><br><br>
+    </div>
 
-  <div>
-    <input class="input is-large" type="text" placeholder="Descripción">
-    <%= form.text_area :description %>
-  </div>
+    <div>
+      <%= form.text_area :description, class: "input", placeholder:'Descripción' %><br><br>
+    </div>
 
-  <div>
-    <input class="input is-large" type="text" placeholder="Cantidad">
-    <%= form.number_field :quantity %>
-  </div>
+    <div>
+      <%= form.number_field :quantity, class: "input", placeholder:'Cantidad' %><br><br> 
+    </div>
 
-  <div>
-    <input class="input is-large" type="text" placeholder="Precio">
-    <%= form.text_field :price %>
-  </div>
+    <div>
+      <%= form.text_field :price, class: "input", placeholder:'Precio' %><br><br> 
+    </div>
 
-  <div>
-  <input class="input is-large" type="text" placeholder="Url de la imagen">
-    <%= form.text_field :img_url %>
-  </div>
+    <div>
+      <%= form.text_field :img_url, class: "input", placeholder:'Url de la imagen'%><br><br> 
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div>
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
 
