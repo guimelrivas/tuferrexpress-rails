@@ -72,20 +72,3 @@ group :test do
   gem "webdrivers"
 end
 
-4.150.000
-6 cuotas
-
-12 cuotas - 275.000
-850.000
-24 semanas
-
-slack
-carreer week
-workshops
-instagram chile
-
-20 agosto 2022
-octubre 2022
-
-$1500
-I own hack

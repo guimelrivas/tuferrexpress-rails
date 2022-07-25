@@ -9,7 +9,7 @@
                 <div class="columns is-vcentered">
                     <div class="column is-5">
                         <figure class="image is-4by3">
-                            <img src="https://picsum.photos/800/600/?random" alt="Description">
+                            <img src="https://guimelrivas.github.io/fotos_ferre_links/images/local.jpeg" alt="Description">
                         </figure>
                     </div>
                     <div class="column is-6 is-offset-1">
@@ -59,28 +59,7 @@
           </div>
         </div>
 
-        <div class="column">
-          Second column
         
-          <div class="column is-25">
-          <div class="card is-shady">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Tempor orci dapibus faber in.</h4>
-                <p>Descripción sencilla de la herramienta
-                sed risus.</p>
-                <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-              </div>
-            </div>
-           </div>
-          </div>
-        </div>
-
       <!--Tarjeta3-->
         <div class="column">
           Second column
@@ -131,7 +110,46 @@
 
      </div>
 
+<!--paginaTarjetas-->
 
+
+<div class="container">
+  <div class="section">
+    
+  
+    <div id="app" class="row columns is-multiline">
+      <div v-for="card in cardData" key="card.id" class="column is-4">
+        <div class="card large">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img :src="card.image" alt="Image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img :src="card.avatar" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4 no-padding">{{card.user.title}}</p>
+                <p>
+                  <span class="title is-6">
+                    <a :href=`http://twitter.com/${card.user.handle}`> {{card.user.handle}} </a> </span> </p>
+                <p class="subtitle is-6">{{card.user.title}}</p>
+              </div>
+            </div>
+            <div class="content">
+              {{card.content}}
+              <div class="background-icon"><span class="icon-twitter"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--Tarjetas codigos-->
@@ -243,6 +261,7 @@
           </div>
         </div>
       </section>
+
       <div class="content has-text-centered">
         <div class="control level-item">
           <a href="https://github.com/BulmaTemplates/bulma-templates">
@@ -256,18 +275,6 @@
     </footer>
 
 
-     <!--footer-->
-        <div class="hero-foot">
-            <div class="container">
-                <div class="tabs is-centered">
-                    <ul>
-                        <li><a>And this is the bottom</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="../js/bulma.js"></script>
 </body>
 
 </html>
